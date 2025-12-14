@@ -18,7 +18,6 @@ def plot_stock(*tickers):
     plt.ylabel("Price in USD")
     plt.show()
 
-plot_stock('nvda', 'mEta', 'aaPl')
 
 # multiple charts
 
@@ -50,5 +49,7 @@ def load_stock(*tickers):
     plt.tight_layout()
     plt.show()
 
-load_stock('MSFT', 'NDAQ')
 
+if __name__ == "__main__" :
+    plot_stock('nvda', 'mEta', 'aaPl')
+    load_stock('MSFT', 'NDAQ')

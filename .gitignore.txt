@@ -1,3 +1,5 @@
 # Test file
 
-analysis_test2.py
+stocks/analysis_test2.py
+__pycache__/
+*.pyc
