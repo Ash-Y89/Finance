@@ -1,5 +1,0 @@
-# Test file
-
-stocks/analysis_test2.py
-__pycache__/
-*.pyc
