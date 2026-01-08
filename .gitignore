@@ -1,5 +1,6 @@
 # Test file
 
 stocks/analysis_test2.py
+stocks_old.py
 __pycache__/
 *.pyc
