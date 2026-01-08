@@ -36,7 +36,7 @@ def load_stock(*tickers):
     ax1.plot(data["High"])
     ax1.grid(True)
     ax1.set_ylabel('Price in USD')
-    ax1.set_xlabel('Year')
+    # ax1.set_xlabel('Year')
     ax1.set_title(f' Prices at High for {tickers}')
 
     ax2.plot(data["Volume"])
@@ -45,7 +45,7 @@ def load_stock(*tickers):
     ax2.set_xlabel('Year')
     ax2.set_title(f'Volume of trades for {tickers}')
 
-    plt.tight_layout()
+    fig.tight_layout()
     plt.show()
 
 
