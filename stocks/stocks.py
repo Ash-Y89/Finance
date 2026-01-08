@@ -32,7 +32,7 @@ def load_stock(*tickers):
 
     
     
-    fig, (ax1, ax2,) = plt.subplots(2,1, figsize=(10,6))
+    fig, (ax1, ax2,) = plt.subplots(2,1, figsize=(10,6), sharex=True)
     ax1.plot(data["High"])
     ax1.grid(True)
     ax1.set_ylabel('Price in USD')
