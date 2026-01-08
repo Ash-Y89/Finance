@@ -30,21 +30,20 @@ def load_stock(*tickers):
     plt.xlabel("Year")
     plt.show()
 
-    plt.figure(figsize = (10,6))
     
-    plt.subplot(2,1,1)
-    plt.plot(data["High"])
-    plt.grid(True)
-    plt.ylabel('Price in USD')
-    plt.xlabel('Year')
-    plt.title(f' Prices at High for {tickers}')
+    
+    fig, (ax1, ax2,) = plt.subplots(2,1, figsize=(10,6))
+    ax1.plot(data["High"])
+    ax1.grid(True)
+    ax1.set_ylabel('Price in USD')
+    ax1.set_xlabel('Year')
+    ax1.set_title(f' Prices at High for {tickers}')
 
-    plt.subplot(2,1,2)
-    plt.plot(data["Volume"])
-    plt.grid(True)
-    plt.ylabel('Volume of trade')
-    plt.xlabel('Year')
-    plt.title(f'Volume of trades for {tickers}')
+    ax2.plot(data["Volume"])
+    ax2.grid(True)
+    ax2.set_ylabel('Volume of trade')
+    ax2.set_xlabel('Year')
+    ax2.set_title(f'Volume of trades for {tickers}')
 
     plt.tight_layout()
     plt.show()
