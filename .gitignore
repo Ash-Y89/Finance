@@ -5,3 +5,5 @@ stocks_old.py
 returns.py
 __pycache__/
 *.pyc
+data/stock_prices.xlsx.csv
+.gitignore
