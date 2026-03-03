@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 data/stock_prices.xlsx.csv
 .gitignore
+data/stock_prices.csv
